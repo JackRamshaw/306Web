@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;"
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+/* Clears, forcing a new row */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* This adds a gutter to the grid */
+[class*="col-"] {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* Media query for mobile: */
+
+
+/* Media query for tablet: */
+
+
+/* Media query for laptop: */
+
+
+/* Media query for desktop: */

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.header {display: none;}
+.menu {width: 100%;}
+.icon {width: 100%;}
+
+.header {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.text {border:groove;}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: groove;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #333;
+}
+
+li:last-child {border-right: none;}
+
+li:hover{
+    color: lightblue;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    font-size: 1.6vw;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+/* Clears, forcing a new row */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* This adds a gutter to the grid */
+[class*="col-"] {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* Media query for mobile: */
+@media (min-width:0px){}
+
+/* Media query for tablet: */
+@media (min-width:768px){
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+
+/* Media query for laptop: */
+@media (min-width:1024px){
+    .header {display: block;}
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+}
+
+/* Media query for desktop: */
+@media (min-width:1440px){
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+}
